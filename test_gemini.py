@@ -55,7 +55,7 @@
    "source": [
     "from google import genai\n",
     "\n",
-    "client = genai.Client(api_key=\"AQ.Ab8RN6J9BBcnRoiVuhnSmxci2J7cYnnakkE7MK8WH0kdLh4ymw\")\n",
+    "client = genai.Client()\n",
     "\n",
     "response = client.models.generate_content(\n",
     "    model=\"gemini-2.0-flash\",\n",
