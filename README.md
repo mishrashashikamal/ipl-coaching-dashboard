@@ -19,3 +19,5 @@ IPL Ball-by-Ball data 2008-2024 from Kaggle
 
 ## 🚧 Status
 Currently in development — adding more analysis daily!
+## DAY 4
+trying hard to do add gemini api but failed many times , 
