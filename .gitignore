@@ -1,5 +1,6 @@
 *.csv
 __pycache__/
 .ipynb_checkpoints/
+.virtual_documents/
 .env
-dhoni_coaching_report.txt
+*.txt
