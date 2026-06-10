@@ -6,15 +6,23 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 import google.generativeai as genai
 
-# Load API key
-load_dotenv(dotenv_path=r"C:\Users\Shashi Kamal Mishra\OneDrive\Documents\ipl-coaching-dashboard\.env")
-API_KEY = os.getenv("GEMINI_API_KEY")
+import os
+import google.generativeai as genai
+
+# Get API key from environment
+API_KEY = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.5-flash")
+
+# # Load API key
+# load_dotenv(dotenv_path=r"C:\Users\Shashi Kamal Mishra\OneDrive\Documents\ipl-coaching-dashboard\.env")
+# API_KEY = os.getenv("GEMINI_API_KEY")
+# genai.configure(api_key=API_KEY)
+# model = genai.GenerativeModel("gemini-2.5-flash")
 
 # ============================================
 # PAGE CONFIG
